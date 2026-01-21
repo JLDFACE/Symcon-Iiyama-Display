@@ -850,7 +850,7 @@ class IiyamaDisplayLAN extends IPSModule
         $this->RegisterVariableString($this->IdentModelName, 'Model Name', '', 50);
         $this->RegisterVariableString($this->IdentFirmware, 'Firmware Version', '', 60);
 
-        $this->RegisterVariableBoolean($this->IdentOnline, 'Online', '~Online', 100);
+        $this->RegisterVariableBoolean($this->IdentOnline, 'Online', '~Alert.Reversed', 100);
         $this->RegisterVariableString($this->IdentLastError, 'LastError', '', 110);
     }
 
