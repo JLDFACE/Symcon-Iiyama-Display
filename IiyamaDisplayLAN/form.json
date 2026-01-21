@@ -1,0 +1,95 @@
+{
+  "elements": [
+    {
+      "type": "ValidationTextBox",
+      "name": "Host",
+      "caption": "Host / IP"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "Port",
+      "caption": "Port",
+      "minimum": 1,
+      "maximum": 65535
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "MonitorID",
+      "caption": "Monitor ID (1..255)",
+      "minimum": 1,
+      "maximum": 255
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "Timeout",
+      "caption": "Timeout (ms)",
+      "minimum": 250,
+      "maximum": 10000
+    },
+    {
+      "type": "Label",
+      "caption": "Polling / UX"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "PollSlow",
+      "caption": "Poll (Slow) Sekunden",
+      "minimum": 5,
+      "maximum": 600
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "PollFast",
+      "caption": "Poll (Fast) Sekunden",
+      "minimum": 2,
+      "maximum": 60
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "FastAfterChange",
+      "caption": "FastAfterChange Sekunden",
+      "minimum": 0,
+      "maximum": 300
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "InputDelayAfterPowerOn",
+      "caption": "Input-Delay nach Power-On (ms)",
+      "minimum": 0,
+      "maximum": 60000
+    },
+    {
+      "type": "Label",
+      "caption": "Hinweis: LAN Control nutzt üblicherweise TCP Port 5000 und die Monitor-ID (1..255)."
+    }
+  ],
+  "actions": [
+    {
+      "type": "Button",
+      "caption": "Jetzt aktualisieren",
+      "onClick": "IIYAMA_UpdateNow($id);"
+    }
+  ],
+  "status": [
+    {
+      "code": 101,
+      "icon": "inactive",
+      "caption": "Instanz wird erstellt"
+    },
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Online"
+    },
+    {
+      "code": 104,
+      "icon": "inactive",
+      "caption": "Offline / keine Antwort"
+    },
+    {
+      "code": 200,
+      "icon": "error",
+      "caption": "Fehler"
+    }
+  ]
+}

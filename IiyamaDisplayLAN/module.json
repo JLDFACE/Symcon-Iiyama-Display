@@ -1,0 +1,13 @@
+{
+  "id": "{EF0451CA-EF01-4B15-9C9C-25DC0E7E9C0B}",
+  "name": "Iiyama Display (LAN/RS232)",
+  "type": 3,
+  "vendor": "iiyama",
+  "aliases": [
+    "Iiyama Display (LAN)"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "IIYAMA"
+}
